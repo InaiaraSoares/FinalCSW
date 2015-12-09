@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+  <head>
+   <title>Os Vingadores - Galeria</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+   
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+ 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    
+   	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/jquery-ui.css" /> <!-- popular tab -->
+   	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/templatemo_style.css">    
+    
+    <!-- JavaScripts -->   
+    <script src="js/jquery-1.11.1.min.js"></script> <!-- lightbox -->
+	<script src="js/templatemo_custom.js"></script> <!-- lightbox -->
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/jquery-ui.min.js"></script> <!-- popular tab -->
+	
+	<script type="text/javascript">
+    jQuery(function($) {
+        $(‘.gallery_demo_unstyled’).addClass(‘gallery_demo’);
+        $(‘ul.gallery_demo’).galleria({
+            history   : true, // ativa a legenda da foto ampliada
+            clickNext : true, // ativa o link sobre a imagem ampliada para a próxima
+            insert    : ‘#main_image’, // nome do div onde aparecerá a imagem ampliada
+            onImage   : function(image,caption,thumb) { 
+                
+                // efeito na imagem e na legenda
+                if(! ($.browser.mozilla && navigator.appVersion.indexOf("Win")!=-1) ) { 
+                    image.css(‘display’,'none’).fadeIn(1000);
+                }
+                caption.css(‘display’,'none’).fadeIn(1000);
+                var _li = thumb.parents(‘li’);
+                _li.siblings().children(‘img.selected’).fadeTo(500,0.3);
+                thumb.fadeTo(‘fast’,1).addClass(’selected’);                 // adiciona um título para a imagem ampliada
+                image.attr(‘title’,'Próxima imagem >>’);
+            },
+            onThumb : function(thumb) {                
+                var _li = thumb.parents(‘li’);                
+                var _fadeTo = _li.is(‘.active’) ? ‘1′ : ‘0.3′;                
+                // efeito ao carregar os thumbs
+                thumb.css({display:’none’,opacity:_fadeTo}).fadeIn(1500);                
+                // efeito ao colocar o mouse em cima do thumb
+                thumb.hover(
+                    function() { thumb.fadeTo(‘fast’,1); },
+                    function() { _li.not(‘.active’).children(‘img’).fadeTo(‘fast’,0.3); } 
+                )
+            }
+        });
+    });
+</script>
+    
+    <!-- JavaScripts -->  
+</head>
+  <body>
+   	<!-- inicio do menu -->	
+  	<div class="container menu">
+    	<div class="row">
+        	<div class="col-sm-4">
+            	<div class="templatemo_webtitle"><img src="images/templatemo_logo.png" alt="logo"></div>
+            </div>
+        	<div class="col-sm-8">
+            	<nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="top-menu">
+              <div class="collapse navbar-collapse main_menu" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="about.html">Detalhes</a></li>
+                  <li class="current"><a href="gallery.html">Galeria</a></li>
+                  <li><a href="contact.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.navbar-collapse --> 
+          </div>
+          <!-- /.container-fluid --> 
+        </nav>
+            </div>
+        </div>
+    </div>
+    <!-- gallery start -->
+    	<div class="container">
+			<div class="row">
+        	<div class="templatemo_gallery_top">
+        	<div class="col-md-8">
+            	<div class="templatemo_gallery_top_left shadow">
+            	<div class="templatemo_gallerytop_title">GALERIA DE FOTOS</div>
+                <div class="templatemo_gallerytop_stitle">CENAS DO FILME</div>
+                <p>Mesmo durando pouco na história da revista americana, a segunda formação acabou se tornando a mais conhecida no Brasil na década de 60, 
+				em função da adaptação de algumas de suas histórias para o desenho animado do Capitão América de 1966. Isso porque a série dos Vingadores 
+				não foi publicada pela EBAL. A fase de Stan Lee só foi conhecida em meados de 1976, quando a Bloch lançou uma revista mensal chamada 
+				Os Vingadores, que teve curta duração. Somente com a Editora Abril, que passou a publicar as histórias na década de 80 na revista Heróis 
+				da TV, com a cronologia iniciando-se a partir da entrada do Visão na equipe, ou seja, já na fase de Roy Thomas, é que os fãs brasileiros 
+				puderam acompanhar as aventuras do grupo com maior regularidade.</p>
+                <a href="#"><div class="templatemo_buttongreen">ELENCO</div></a>
+                <div class="clear"></div>
+              </div>
+            </div>
+            <div class="col-md-4"><img src="images/templatemo_gallery.jpg" class="shadow" alt="templatemo gallery image"></div>
+            </div>
+        </div>
+        </div>
+      <!--  <div class="container">
+        	<div class="row margin30">
+            	<div class="col-md-8">
+                	<div class="templatemo_gallery_left shadow">
+                		<div class="templatemo_gallerymid_title">CENAS</div>
+                        <div class="col-sm-6">
+                        <img src="images/gallery/1.jpg" alt="gallery 1">
+                        <div class="over">
+                        	<span class="title">CAPITÃO AMÉRICA</span> 
+                            
+                            
+                        </div>
+                        </div>
+                        <div class="col-sm-6 g_margin30">
+                    	    <img src="images/gallery/2.jpg" alt="gallery 2">
+                        	<div class="over">
+                        	<span class="title">JESSICA JONES</span> 
+                           
+                            
+                        </div>
+                        </div>
+                        <div class="col-sm-6 margin30">
+                       	 <img src="images/gallery/3.jpg" alt="gallery 3">
+                        <div class="over">
+                        	<span class="title">O HOMEM DE FERRO</span> 
+                            
+                        </div>
+                        </div>
+                        <div class="col-sm-6  margin30">
+                      	  <img src="images/gallery/4.jpg" alt="gallery 4">
+                        <div class="over">
+                        	<span class="title">HULK</span> 
+                       
+                            
+                        </div>
+                        </div>
+                        <div class="col-sm-6  margin30">
+                        	<img src="images/gallery/5.jpg" alt="gallery 5">
+                            <div class="over">
+                        	<span class="title">THOR</span> 
+                                                  
+                        </div>
+                        </div>
+                        <div class="col-sm-6  margin30">
+                        	<img src="images/gallery/6.jpg" alt="gallery 6">
+                            <div class="over">
+                        	<span class="title">THOR</span> 
+                                                    
+                        </div>
+                        </div>
+                    </div>
+                </div>
+				-->
+                <div class="col-md-4">
+                	<div class="templatemo_testi shadow s_margin30">
+					<div id="main_image"></div>
+							<ul class="gallery_demo">
+							 <li class="active"><img src="img/flowing-rock.jpg" alt="Rock" title="Legenda da primeira foto"></li>
+							 <li><img src="images/gallery/1.jpg" alt="" title=""></li>
+							<li><img src="images/gallery/2.jpg" alt="" title=""></li>
+							 <li><img src="images/gallery/3.jpg" alt="" title=""></li>
+							 <li><img src="images/gallery/4.jpg" alt="" title=""></li>
+							 <li><img src="images/gallery/5.jpg" alt="" title=""></li>
+							 							</ul>
+                    	<!-- <div class="maintitle">
+                        	ELENCO
+                        </div>
+                        <div class="para">
+                        	<span>Lorem quis bibendum auctor,</span> nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed cursus a sit amet mauris. 
+                            <span class="right"><a href="#">PUTATE CURSUS</a></span></div>
+                            <div class="para">
+                        	<span>Morbi accumsan ipsum velit.</span> Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  auctor eu in elit. 
+                            <span class="right"><a href="#">NAM TELLUS ODIO</a></span></div>
+                            <div class="para">
+                        	<span>Class aptent taciti</span> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   
+                            <span class="right"><a href="#">CONSEQUAT AUCT</a></span></div>
+                            <div class="para">
+                        	<span>Nullam ac urna eu felis</span> dapibus condimentum sit amet a augue. Sed non neque elit.  
+                            <span class="right"><a href="#">PORIN CODIMENT</a></span></div>
+                    </div>
+                    <div class="templatemo_testi shadow margin30">
+                    	<div class="maintitle">
+                        	LOREM IPSUM DOLOR
+                        </div>
+                        <div class="para">
+                        	<span class="title">NAM NEC TELLUS A ODIO</span>
+                        	<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+
+							<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                			<p>Rvelit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                			<a href="#"><div class="templatemo_buttongreen">LOREM IPSUM</div></a>
+                		</div> -->
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    	<!-- gallery end -->
+    
+	<!-- footer start -->
+    <div class="container">
+    	<div class="row">
+        	<div class="col-md-12 margin30 center"></div>
+            <div class="margin30"></div>
+        </div>
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
