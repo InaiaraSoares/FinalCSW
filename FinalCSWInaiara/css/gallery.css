@@ -1,0 +1,46 @@
+
+    #gallery {
+    background-color: transparent;
+    padding: 10;
+    margin-left: 205px;
+    margin-right: 170px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+    #gallery ul { list-style: none; 
+  }
+    #gallery ul li {
+   display: inline; 
+   }
+    #gallery ul img {
+        border: 5px solid #444444;
+        border-width: 5px 5px 20px;
+
+    }
+    #gallery ul a:hover img {
+        border: 5px solid #fff;
+        border-width: 5px 5px 20px;
+        color: #fff;
+    background-color: #444444;
+
+    }
+    #gallery ul a:hover { 
+    color: #fff; 
+       
+  }
+  .mol{
+   display: inline;
+     border: 5px solid #fff;
+        border-width: 15px 15px 30px;
+
+   
+  }
+  .mole{
+    background-color: transparent;
+    padding: 30;
+    margin-left: 185px;
+    margin-right: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }

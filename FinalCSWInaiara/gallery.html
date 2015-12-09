@@ -8,19 +8,36 @@
 	<meta name="viewport" content="initial-scale=1">
  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'> 
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    
+    <link href="css/lightbox.css" rel="stylesheet" />
    	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/jquery-ui.css" /> <!-- popular tab -->
    	<link rel="stylesheet" href="css/templatemo_misc.css">
 	<link rel="stylesheet" href="css/templatemo_style.css">    
+	<link href="css/gallery.css" rel="stylesheet" type="text/css"/>
     
     <!-- JavaScripts -->   
     <script src="js/jquery-1.11.1.min.js"></script> <!-- lightbox -->
 	<script src="js/templatemo_custom.js"></script> <!-- lightbox -->
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/jquery-ui.min.js"></script> <!-- popular tab -->
-    
+    <script src="js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="scripts/prettyphoto/prettyPhoto.css" type="text/css" />
+    <script type="text/javascript" src="scripts/prettyphoto/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript">
+   $(document).ready(function() {
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        theme: 'dark_rounded',
+        overlay_gallery: false,
+        social_tools: false
+    });
+    $(function() {
+    $( "#dialog" ).dialog();
+    });
+
+});
+</script>
     <!-- JavaScripts -->  
 </head>
   <body>
@@ -70,11 +87,11 @@
 				da TV, com a cronologia iniciando-se a partir da entrada do Visão na equipe, ou seja, já na fase de Roy Thomas, é que os fãs brasileiros 
 				puderam acompanhar as aventuras do grupo com maior regularidade.</p>
                 <a href="#"><div class="templatemo_buttongreen">ELENCO</div></a>
+				<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/65F7yyEo450" frameborder="0" allowfullscreen></iframe></div>
                 <div class="clear"></div>
               </div>
-            </div>
-            <div class="col-md-4"><img src="images/templatemo_gallery.jpg" class="shadow" alt="templatemo gallery image"></div>
-            </div>
+           
         </div>
         </div>
         <div class="container">
@@ -82,6 +99,21 @@
             	<div class="col-md-8">
                 	<div class="templatemo_gallery_left shadow">
                 		<div class="templatemo_gallerymid_title">CENAS</div>
+						<div class="wrapper col4">
+							  <ul>
+								<li><a rel="prettyPhoto[gallery1]" href="images/gallery/1.jpg" width="160" height="160" title=""><img src="images/gallery/1.jpg" width="160" height="160" alt="" /></a></li>
+								<li><a rel="prettyPhoto[gallery1]" href="images/gallery/2.jpg" width="160" height="160" title=""><img src="images/gallery/2.jpg" width="80" height="160" alt=""/></a></li>
+								<li><a rel="prettyPhoto[gallery1]" href="images/gallery/3.jpg" width="160" height="160" title=""><img src="images/gallery/3.jpg" width="80" height="160" alt=""/></a></li>
+								<li><a rel="prettyPhoto[gallery1]" href="images/gallery/4.jpg" width="160" height="160"  title=""><img src="images/gallery/4.jpg" width="80" height="160" alt="" /></a></li>
+								
+							  </ul>
+							  <br class="clear" />
+							  
+							  <div><iframe width="420" height="315" src="https://www.youtube.com/embed/Z6XBVKCeFpo" frameborder="0" allowfullscreen></iframe></div>
+							</div>
+						  </div>
+						<!--inicio
+						
                         <div class="col-sm-6">
                         <img src="images/gallery/1.jpg" alt="gallery 1">
                         <div class="over">
@@ -129,50 +161,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                	<div class="templatemo_testi shadow s_margin30">
-                    	<!-- <div class="maintitle">
-                        	ELENCO
-                        </div>
-                        <div class="para">
-                        	<span>Lorem quis bibendum auctor,</span> nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed cursus a sit amet mauris. 
-                            <span class="right"><a href="#">PUTATE CURSUS</a></span></div>
-                            <div class="para">
-                        	<span>Morbi accumsan ipsum velit.</span> Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  auctor eu in elit. 
-                            <span class="right"><a href="#">NAM TELLUS ODIO</a></span></div>
-                            <div class="para">
-                        	<span>Class aptent taciti</span> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   
-                            <span class="right"><a href="#">CONSEQUAT AUCT</a></span></div>
-                            <div class="para">
-                        	<span>Nullam ac urna eu felis</span> dapibus condimentum sit amet a augue. Sed non neque elit.  
-                            <span class="right"><a href="#">PORIN CODIMENT</a></span></div>
-                    </div>
-                    <div class="templatemo_testi shadow margin30">
-                    	<div class="maintitle">
-                        	LOREM IPSUM DOLOR
-                        </div>
-                        <div class="para">
-                        	<span class="title">NAM NEC TELLUS A ODIO</span>
-                        	<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
-
-							<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-                			<p>Rvelit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-                			<a href="#"><div class="templatemo_buttongreen">LOREM IPSUM</div></a>
-                		</div> -->
+				-->
+				
                 
-                    </div>
-                </div>
+              
             </div>
         </div>
-    	<!-- gallery end -->
-    
-	<!-- footer start -->
-    <div class="container">
-    	<div class="row">
-        	<div class="col-md-12 margin30 center"></div>
-            <div class="margin30"></div>
-        </div>
-    </div>
-    <!-- footer end -->
+    	
   </body>
 </html>

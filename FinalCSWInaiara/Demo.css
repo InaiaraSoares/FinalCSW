@@ -1,0 +1,114 @@
+/*!
+* bootstrap lightbox demo file
+* Copyright 2025 Mikhail Flenov (http://www.flenov.net)
+* http://www.apache.org/licenses/LICENSE-2.0.txt
+*/ 
+
+html {
+	background: #6C7A89;
+}
+
+body {
+	color:#444;
+	background: #fafafa;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color:#F2784B;
+}
+
+a:hover {
+	color:#EB974E;
+}
+
+h1, h2, h3, h4 { 
+	color: #EB974E; 
+}
+
+h1 {
+	font-size: 160%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+.topmenu {
+	background: #000;
+	padding:12px 0px 4px 0px;
+	font-size: 110%;
+	text-transform: uppercase;
+}
+.topmenu a {
+	margin-left: 20px;
+}
+
+.header {
+	background: #6C7A89 url("https://unsplash.it/1800/1200?image=923") no-repeat center;
+	height:120px;
+}
+
+.footer {
+	background: #6C7A89;
+	height:140px;
+	padding-top:12px;
+	color:white;
+}
+
+.container {
+	padding-bottom: 10px;
+}
+
+.thumbs {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+pre {
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+.thumbs img {
+	padding:8px;
+	width:100%;
+}
+
+.message {
+	font-size: 280%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+	color:#fff;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.clear {
+	clear:both;
+	margin-top:10px;
+}
+
+.person-photo {
+	display: block;
+	border-radius: 99999px;
+	-webkit-border-radius: 99999px;
+	-moz-border-radius: 99999px;
+}
+
+.left-aligned-photo {
+	float:left;
+	margin-right:10px;
+}
+
+@media screen and (max-width: 990px) {
+	.message {
+		font-size: 180%;
+	}
+}

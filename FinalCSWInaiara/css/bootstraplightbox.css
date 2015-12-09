@@ -1,0 +1,57 @@
+/*!
+* bootstraplightbox.css v0.1 
+* Copyright 2025 Mikhail Flenov (http://www.flenov.net)
+* http://www.apache.org/licenses/LICENSE-2.0.txt
+*/
+.lightbox {
+    background-color: transparent;
+    z-index: 2000;
+}
+
+.lightbox-content {
+    background-color: #ffffff;
+	overflow: auto;
+}
+
+.lightbox-image {
+    overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 20px;	
+}
+
+.lightbox-fitwidth-image {
+	max-height:100%;
+	max-width:100%;
+}
+
+.modal-screenshot {
+    width:90%;
+}
+
+.lightbox-thumbnail {
+	cursor: pointer;
+}
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.lightbox-left {
+    position: absolute;
+    left: 0px;
+    top: 45%;
+    bottom: 0px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.lightbox-right {
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    bottom: 0px;
+    vertical-align: middle;
+    padding: 10px;
+}

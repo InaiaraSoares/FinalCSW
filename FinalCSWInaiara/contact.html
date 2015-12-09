@@ -20,6 +20,37 @@
 	<script src="js/templatemo_custom.js"></script> <!-- lightbox -->
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/jquery-ui.min.js"></script> <!-- popular tab -->
+	
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" media = "(max-width: 820px)" type="text/css" href="assets/css/mobile.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+		<link href="jquery-ui.css" rel="stylesheet">
+		<link href="assets/css/datepicker.css" rel="stylesheet">
+		<!-- JS -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- Script da mascara-->
+		<script src="js/j/jquery-2.1.4.min.js"></script>
+		<script src="js/j/jquery.maskedinput.min.js"></script>
+		<script src="js/j/datepicker.js"></script>
+	<script>
+
+		$(function(){
+			$('#txtFone').mask('(99) 9999-9999');
+			$('#txtCep').mask('99999-999');
+			$('#txtCpf').mask('999999999-99');
+			$('#txtRg').mask('999999999-9');
+		
+		});
+
+		  $(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+ 			
+		</script>
     
     <!-- JavaScripts -->  
 </head>
@@ -75,11 +106,16 @@
             	<div class="templatemo_contact shadow">
                 	<div class="title">ENVIE SUA DÚVIDA</div>
                     
-                	<div class="col-md-6">
-                    	<form action="#" method="post">
-                        	<input type="text" name="textfield" id="nametext" class="name" placeholder="NOME">
-                            <input type="text" name="textfield" id="emailtext" class="email" placeholder="EMAIL">
-                            <textarea name="" class="message" placeholder="MENSAGEM ... "></textarea>
+                	<div class="input-container">
+								<input for="text"   type="text"  id="nome"   class="input" placeholder="Nome" />
+								<input for="text"   type="text"  id="sobre"   class="input" placeholder="Sobrenome" />
+								<input for="txtCpf" type="text"   id="txtCpf"  class="input" placeholder="CPF" />
+								<input for="txtRg"  type="text"    id="txtRg"   class="input" placeholder="RG" />
+								<input for="text"   type="text"  id="datepicker" class="input" placeholder="Data Aniversário" />
+								<input for="textFone" type="text" id="txtFone" class="input" placeholder="Telefone" />
+								<input for="text"   type="email"  id="email"   class="input" placeholder="E-mail" />
+								<input for="text"   type="password" id="senha" class="input" placeholder="Senha" />
+				
                             <button type="submit" class="blue">ENVIAR</button>
                         </form>
                     </div>
@@ -104,4 +140,52 @@
     <!-- footer end -->
 
   </body>
+  <script>
+  $(document).ready(function(){
+  $(function() {
+    $( "#date" ).datepicker();
+  });
+  $(function() {
+    var availableTags = [
+      "hotmail.",
+      "aline",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#nametext" "#emailtext" ).autocomplete({
+      source: availableTags
+    });
+  });
+  $(function() {
+    $( "#speed" ).selectmenu();
+ 
+    $( "#files" ).selectmenu();
+ 
+    $( "#number" )
+      .selectmenu()
+      .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+  });
+     
+  });
+  
+  </script>
 </html>
